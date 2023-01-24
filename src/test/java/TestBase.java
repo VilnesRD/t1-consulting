@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class TestBase {
     @BeforeAll
     public static void testBaseUrlConfiguration() {
-        Configuration.baseUrl = System.getProperty("base_url", "https://www.t1-consulting.ru/");
+        Configuration.baseUrl = System.getProperty("base_url");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browser_ver", "100.0");
         Configuration.browserSize = System.getProperty("screen_resolution", "1920x1080");

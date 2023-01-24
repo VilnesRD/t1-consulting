@@ -16,7 +16,6 @@ import static io.qameta.allure.Allure.step;
 
 public class WebTests extends TestBase {
     @ValueSource(strings = {"О компании", "Услуги", "Продукты", "Контакты"})
-    @DisplayName("Проверка навигации по сайту")
     @ParameterizedTest (name = "Проверка навигации по сайту")
     @Step
     void headerTest(String headerData) {
@@ -30,7 +29,6 @@ public class WebTests extends TestBase {
 
 
     @ValueSource(strings = {"Пресс-центр", "Достижения", "Партнеры", "Группа компаний", "Комплаенс"})
-    @DisplayName("Проверка навигации по странице О компании")
     @ParameterizedTest (name = "Проверяем, что на странице О компании есть кнопки перечисленные в ValueSource")
     void aboutUsTest(String aboutUsData) {
         step("Открываем страницу О компании", () -> {
@@ -42,7 +40,6 @@ public class WebTests extends TestBase {
     }
 
     @CsvFileSource(resources = "serviceData.csv")
-    @DisplayName("Проверка навигации по странице Услуги")
     @ParameterizedTest (name = "Проверка навигации по странице Услуги")
     void servicesTest(String serviceData) {
         step("Открываем страницу Услуги", () -> {
@@ -55,7 +52,6 @@ public class WebTests extends TestBase {
 
 
     @CsvFileSource(resources = "returnButton.csv")
-    @DisplayName("Проверка появления страницы 404")
     @ParameterizedTest (name = "Проверка появления страницы 404 при переходе по гиперссылке 'Вернуться назад'")
 
     void returnButton(String servicePage, String errorPage) {
