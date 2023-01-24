@@ -8,15 +8,15 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class BaseTest {
+public class TestBase {
     @BeforeAll
     public static void testBaseUrlConfiguration() {
-        //Configuration.pageLoadTimeout = 10000;
-        Configuration.baseUrl = System.getProperty("baseUrl","https://www.t1-consulting.ru/");
-        Configuration.browserSize = System.getProperty("resolution", "1920x1080");
+        Configuration.baseUrl = System.getProperty("base_url", "https://www.t1-consulting.ru/");
         Configuration.browser = System.getProperty("browser", "chrome");
-       // Configuration.remote = System.getProperty("selenoideURL", "https://user1:1234@selenoid.autotests.cloud") + "/wd/hub";
-        // Configuration.browserVersion = System.getProperty("browserVersion", "99.0");
+        Configuration.browserVersion = System.getProperty("browser_ver", "100.0");
+        Configuration.browserSize = System.getProperty("screen_resolution", "1920x1080");
+        Configuration.remote = System.getProperty("remoteUrl");
+        Configuration.timeout = 10000;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);

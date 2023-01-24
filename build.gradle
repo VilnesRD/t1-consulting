@@ -1,8 +1,9 @@
 plugins {
     id 'java'
+    id 'io.qameta.allure' version '2.11.2'
 }
 
-group 'org.vulnes'
+group 'org.vilnes'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -10,10 +11,34 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation (
+            'org.junit.jupiter:junit-jupiter:5.9.1',
+            'com.codeborne:selenide:6.10.1',
+            'org.assertj:assertj-core:3.23.1',
+            'org.slf4j:slf4j-simple:2.0.5',
+            'io.qameta.allure:allure-selenide:2.20.1',
+            'com.opencsv:opencsv:5.6',
+            'org.aeonbits.owner:owner:1.0.4'
+    )
+    testImplementation 'org.testng:testng:7.1.0'
+    testRuntimeOnly ('org.junit.jupiter:junit-jupiter-engine:5.8.2')
 }
 
-test {
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
 }
