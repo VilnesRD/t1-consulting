@@ -72,13 +72,12 @@ gradle clean test
 
 ```bash
 gradle clean test 
+${TASK}
+-Dbase_url=${BASE_URL}
+-DremoteUrl=${REMOTE_URL}
+-Dscreen_resolution=${BROWSER_SIZE}
 -Dbrowser=${BROWSER}
--DbrowserVersion=${BROWSER_VERSION}
--DbrowserSize=${BROWSER_SIZE}
--DbrowserMobileView="${BROWSER_MOBILE}"
--DremoteDriverUrl=https://user1:1234@${REMOTE_DRIVER_URL}/wd/hub/
--DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
--Dthreads=${THREADS}
+-Dbrowser_ver=${BROWSER_VERSION}
 ```
 
 ### Параметры сборки
