@@ -121,7 +121,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
 >- [x] <code><strong>*EXECUTORS*</strong></code> - отображает исполнителя текущей сборки (ссылка на сборку в Jenkins)
 
 <p align="center">
-  <img src="images/screens/AlureResult.png" alt="Allure Report" width="900">
+  <img src="images/screens/AllureResult.png" alt="Allure Report" width="900">
 </p>
 
 ## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1834/launches)
