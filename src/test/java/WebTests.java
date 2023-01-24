@@ -16,7 +16,8 @@ import static io.qameta.allure.Allure.step;
 
 public class WebTests extends TestBase {
     @ValueSource(strings = {"О компании", "Услуги", "Продукты", "Контакты"})
-    @ParameterizedTest (name = "Проверка навигации по сайту")
+    @ParameterizedTest
+    @DisplayName("Проверка навигации по сайту")
     @Step
     void headerTest(String headerData) {
         step ("Открываем главную страницу", () -> {
@@ -29,7 +30,8 @@ public class WebTests extends TestBase {
 
 
     @ValueSource(strings = {"Пресс-центр", "Достижения", "Партнеры", "Группа компаний", "Комплаенс"})
-    @ParameterizedTest (name = "Проверяем, что на странице О компании есть кнопки перечисленные в ValueSource")
+    @ParameterizedTest
+    @DisplayName("Проверка страницы 'О компании' на наличие кнопок из ValueSource")
     void aboutUsTest(String aboutUsData) {
         step("Открываем страницу О компании", () -> {
             open(baseUrl + "about/");
@@ -40,7 +42,8 @@ public class WebTests extends TestBase {
     }
 
     @CsvFileSource(resources = "serviceData.csv")
-    @ParameterizedTest (name = "Проверка навигации по странице Услуги")
+    @ParameterizedTest
+    @DisplayName("Проверка страницы 'Услуги' на наличие кнопок из CSV")
     void servicesTest(String serviceData) {
         step("Открываем страницу Услуги", () -> {
             open(baseUrl + "services/");
@@ -52,7 +55,8 @@ public class WebTests extends TestBase {
 
 
     @CsvFileSource(resources = "returnButton.csv")
-    @ParameterizedTest (name = "Проверка появления страницы 404 при переходе по гиперссылке 'Вернуться назад'")
+    @ParameterizedTest
+    @DisplayName("Проверка появления страницы 404")
 
     void returnButton(String servicePage, String errorPage) {
         step("Открываем страницу продукта {0}", () -> {
