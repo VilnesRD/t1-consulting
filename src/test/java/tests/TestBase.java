@@ -1,21 +1,30 @@
+package tests;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import config.WebDriverProvider;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import config.WebDriverConfig;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.aeonbits.owner.ConfigFactory;
+
+
 
 public class TestBase {
+
+    private static WebDriverConfig config;
+    private static WebDriverProvider configuration;
     @BeforeAll
-    public static void testBaseUrlConfiguration() {
-        Configuration.baseUrl = System.getProperty("base_url");
-        Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("browser_ver", "100.0");
-        Configuration.browserSize = System.getProperty("screen_resolution", "1920x1080");
-        Configuration.remote = System.getProperty("remoteUrl");
+    static void setUp() {
+
+        config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+        configuration = new WebDriverProvider();
+        configuration.webDriverConfig(config);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
