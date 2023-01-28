@@ -33,6 +33,7 @@ public interface WebDriverConfig extends Config {
     Boolean IfRemote();
 
     @Key("remote")
+    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub/")
     String getRemote();
 
 }
