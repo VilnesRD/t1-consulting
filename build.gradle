@@ -17,8 +17,8 @@ dependencies {
             'org.assertj:assertj-core:3.23.1',
             'org.slf4j:slf4j-simple:2.0.5',
             'io.qameta.allure:allure-selenide:2.20.1',
-            'com.opencsv:opencsv:5.6',
-            'org.aeonbits.owner:owner:1.0.4'
+            'org.aeonbits.owner:owner:1.0.4',
+            'io.github.bonigarcia:webdrivermanager:5.3.2'
     )
     testImplementation 'org.testng:testng:7.1.0'
     testRuntimeOnly ('org.junit.jupiter:junit-jupiter-engine:5.8.2')
