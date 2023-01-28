@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Added @DisplayName">
-      <change afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/remote.properties" afterDir="false" />
+    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Added @Owner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +80,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/yavil/IdeaProjects/t1/src/test/resources",
+    "last_opened_file_path": "C:/Users/yavil/IdeaProjects/t1",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -97,8 +93,8 @@
       <recent name="C:\Users\yavil\IdeaProjects\t1\notification" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.t1 [allureServe]">
-    <configuration name="ChooseProduct.methodSourceExampleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.WebTests.headerTest">
+    <configuration name="WebTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +107,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ChooseProduct.methodSourceExampleTest&quot;" />
+            <option value="&quot;tests.WebTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -121,7 +117,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WebTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WebTests.aboutUsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +130,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WebTests&quot;" />
+            <option value="&quot;tests.WebTests.aboutUsTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WebTests.headerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.WebTests.headerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +176,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WebTests.returnButton&quot;" />
+            <option value="&quot;tests.WebTests.returnButton&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,7 +186,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WebTests.searchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WebTests.searchTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -180,7 +199,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WebTests.searchTest&quot;" />
+            <option value="&quot;tests.WebTests.searchTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -190,34 +209,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="t1 [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="allureServe" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.t1 [allureServe]" />
-        <item itemvalue="Gradle.WebTests" />
-        <item itemvalue="Gradle.WebTests.searchTest" />
+        <item itemvalue="Gradle.WebTests.headerTest" />
         <item itemvalue="Gradle.WebTests.returnButton" />
-        <item itemvalue="Gradle.ChooseProduct.methodSourceExampleTest" />
+        <item itemvalue="Gradle.WebTests (1)" />
+        <item itemvalue="Gradle.WebTests.aboutUsTest" />
+        <item itemvalue="Gradle.WebTests.searchTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674566966278</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added @Owner">
+      <created>1674640938860</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674640938860</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -304,6 +309,7 @@
     <MESSAGE value="Added img" />
     <MESSAGE value="Added gif" />
     <MESSAGE value="Added @DisplayName" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added @DisplayName" />
+    <MESSAGE value="Added @Owner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added @Owner" />
   </component>
 </project>
