@@ -13,27 +13,21 @@ import org.aeonbits.owner.Config;
 public interface WebDriverConfig extends Config {
 
     @Key("browser")
-    @DefaultValue("chrome")
     String getBrowser();
 
-    @Key("baseUrl")
-    @DefaultValue("https://www.t1-consulting.ru")
+    @Key("base_Url")
     String getBaseUrl();
 
-    @Key("browserVersion")
-    @DefaultValue("100.0")
+    @Key("browser_version")
     String getBrowserVersion();
 
-    @Key("browserSize")
-    @DefaultValue("1920x1080")
+    @Key("browser_size")
     String getBrowserSize();
 
     @Key("ifRemote")
-    @DefaultValue("false")
     Boolean IfRemote();
 
     @Key("remote")
-    @DefaultValue("https://user1:1234@selenoid.autotests.cloud")
     String getRemote();
 
 }

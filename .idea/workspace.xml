@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Added @Owner">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Added remote link">
       <change beforePath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -338,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674900048685</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added remote link">
+      <created>1675230067553</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675230067553</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -350,6 +356,7 @@
     <MESSAGE value="Added gif" />
     <MESSAGE value="Added @DisplayName" />
     <MESSAGE value="Added @Owner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added @Owner" />
+    <MESSAGE value="Added remote link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added remote link" />
   </component>
 </project>
