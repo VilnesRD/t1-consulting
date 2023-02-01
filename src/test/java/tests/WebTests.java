@@ -43,12 +43,12 @@ public class WebTests extends TestBase {
         });
     }
 
-    @CsvFileSource(resources = "serviceData.csv")
+    @CsvFileSource(resources = "/testData/serviceData.csv")
     @ParameterizedTest
     @DisplayName("Проверка страницы 'Услуги' на наличие кнопок из CSV")
     void servicesTest(String serviceData) {
         step("Открываем страницу Услуги", () -> {
-            open(baseUrl + "services/");
+            open(baseUrl + "/services/");
         });
         step ("Проверяем, что на странице есть кнопки из servicesData", () -> {
             $("ul.service-list").shouldHave(text(serviceData));
@@ -56,7 +56,7 @@ public class WebTests extends TestBase {
     }
 
 
-    @CsvFileSource(resources = "returnButton.csv")
+    @CsvFileSource(resources = "/testData/returnButton.csv")
     @ParameterizedTest
     @DisplayName("Проверка появления страницы 404")
 
