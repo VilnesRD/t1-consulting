@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Update WebDriverConfig">
+    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Update WebDriverConfig, WebDriverProvider, remote.properties.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,7 +369,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675234481904</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Update WebDriverConfig, WebDriverProvider, remote.properties.">
+      <created>1675313404364</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675313404364</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Update WebDriverConfig, WebDriverProvider, remote.properties.">
+      <created>1675313415606</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675313415606</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -381,6 +397,7 @@
     <MESSAGE value="Added @Owner" />
     <MESSAGE value="Added remote link" />
     <MESSAGE value="Update WebDriverConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update WebDriverConfig" />
+    <MESSAGE value="Update WebDriverConfig, WebDriverProvider, remote.properties." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update WebDriverConfig, WebDriverProvider, remote.properties." />
   </component>
 </project>
