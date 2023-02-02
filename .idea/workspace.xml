@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Update WebDriverConfig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WebTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/remote.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/returnButton.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData/returnButton.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serviceData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData/serviceData.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675230909278</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update WebDriverConfig">
+      <created>1675234481904</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675234481904</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
