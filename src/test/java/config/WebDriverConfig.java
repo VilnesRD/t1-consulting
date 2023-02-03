@@ -5,7 +5,6 @@ import org.aeonbits.owner.Config;
 
 
 @Config.Sources({
-        "classpath:properties/local.properties",
         "classpath:properties/${env}.properties"
 })
 

@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Update WebDriverConfig">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ApiTest.java" afterDir="false" />
+    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Add api search test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/Attach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/Attachments/Attach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ApiTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WebTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +110,7 @@
       <recent name="C:\Users\yavil\IdeaProjects\t1\src\test\resources\properties" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ApiTest.searchTest">
+  <component name="RunManager" selected="Gradle.WebTests.searchTest">
     <configuration name="ApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -161,6 +157,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ApiTest.searchTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.ApiTest.searchTest1&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="WebTests.searchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -175,29 +194,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.WebTests.searchTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="WebTests.servicesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.WebTests.servicesTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -230,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ApiTest.searchTest" />
-        <item itemvalue="Gradle.ApiTest" />
         <item itemvalue="Gradle.WebTests.searchTest" />
+        <item itemvalue="Gradle.ApiTest.searchTest" />
+        <item itemvalue="Gradle.ApiTest.searchTest1" />
+        <item itemvalue="Gradle.ApiTest" />
         <item itemvalue="Gradle.t1 [allureServe]" />
-        <item itemvalue="Gradle.WebTests.servicesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675347015730</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add api search test">
+      <created>1675421820735</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1675421820735</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -409,6 +412,7 @@
     <MESSAGE value="Added remote link" />
     <MESSAGE value="Update WebDriverConfig, WebDriverProvider, remote.properties." />
     <MESSAGE value="Update WebDriverConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update WebDriverConfig" />
+    <MESSAGE value="Add api search test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add api search test" />
   </component>
 </project>
