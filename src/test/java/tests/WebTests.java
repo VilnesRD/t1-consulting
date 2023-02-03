@@ -75,23 +75,4 @@ public class WebTests extends TestBase {
         });
     }
 
-    @Test
-    @DisplayName("Проверка работы поиска")
-    void searchTest (){
-        step("Открываем главную страницу", () -> {
-            open(baseUrl);
-        });
-        step("Проверяем, что на странице есть поле поиска", () -> {
-            $(".but-s").shouldBe(visible, Duration.ofSeconds(5));
-            $(".but-s").click();
-        });
-        step("Вводим в поле поиска 'Тестирование'", () -> {
-            $(".field-s").shouldBe(visible, Duration.ofSeconds(5)).click();
-            $(".field-s input").setValue("Тестирование").pressEnter();
-        });
-        step("Проверяем, что на странице есть результаты поиска", () -> {
-            $(".list-achiement").shouldBe(visible);
-        });
-    }
-
 }

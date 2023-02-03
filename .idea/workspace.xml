@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Update WebDriverConfig, WebDriverProvider, remote.properties.">
+    <list default="true" id="e016b5fa-37a7-4806-ab26-2079307e3a73" name="Changes" comment="Update WebDriverConfig">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/Attach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/Attachments/Attach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WebTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,8 +114,8 @@
       <recent name="C:\Users\yavil\IdeaProjects\t1\src\test\resources\properties" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WebTests.servicesTest">
-    <configuration name="WebTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ApiTest.searchTest">
+    <configuration name="ApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -124,7 +128,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.WebTests&quot;" />
+            <option value="&quot;tests.ApiTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -134,7 +138,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WebTests.headerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ApiTest.searchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,7 +151,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.WebTests.headerTest&quot;" />
+            <option value="&quot;tests.ApiTest.searchTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +161,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WebTests.returnButton" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WebTests.searchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -170,7 +174,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.WebTests.returnButton&quot;" />
+            <option value="&quot;tests.WebTests.searchTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WebTests.servicesTest" />
-        <item itemvalue="Gradle.WebTests (1)" />
-        <item itemvalue="Gradle.WebTests.headerTest" />
+        <item itemvalue="Gradle.ApiTest.searchTest" />
+        <item itemvalue="Gradle.ApiTest" />
+        <item itemvalue="Gradle.WebTests.searchTest" />
         <item itemvalue="Gradle.t1 [allureServe]" />
-        <item itemvalue="Gradle.WebTests.returnButton" />
+        <item itemvalue="Gradle.WebTests.servicesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -383,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675313415606</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Update WebDriverConfig">
+      <created>1675347015730</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1675347015730</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -396,8 +407,8 @@
     <MESSAGE value="Added @DisplayName" />
     <MESSAGE value="Added @Owner" />
     <MESSAGE value="Added remote link" />
-    <MESSAGE value="Update WebDriverConfig" />
     <MESSAGE value="Update WebDriverConfig, WebDriverProvider, remote.properties." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update WebDriverConfig, WebDriverProvider, remote.properties." />
+    <MESSAGE value="Update WebDriverConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update WebDriverConfig" />
   </component>
 </project>

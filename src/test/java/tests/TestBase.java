@@ -12,7 +12,7 @@ import org.aeonbits.owner.ConfigFactory;
 
 import config.WebDriverProvider;
 import config.WebDriverConfig;
-import helpers.Attach;
+import helpers.Attachments.Attach;
 
 
 
