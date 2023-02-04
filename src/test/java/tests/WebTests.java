@@ -21,7 +21,7 @@ public class WebTests extends TestBase {
     @ParameterizedTest
     @DisplayName("Проверка навигации по сайту")
     @Step
-    void headerTest(String headerData) {
+    public void headerTest(String headerData) {
         step ("Открываем главную страницу", () -> {
             open(baseUrl);
         });
@@ -34,7 +34,7 @@ public class WebTests extends TestBase {
     @ValueSource(strings = {"Пресс-центр", "Достижения", "Партнеры", "Группа компаний", "Комплаенс"})
     @ParameterizedTest
     @DisplayName("Проверка страницы 'О компании' на наличие кнопок из ValueSource")
-    void aboutUsTest(String aboutUsData) {
+    public void aboutUsTest(String aboutUsData) {
         step("Открываем страницу О компании", () -> {
             open(baseUrl + "about/");
         });
@@ -46,7 +46,7 @@ public class WebTests extends TestBase {
     @CsvFileSource(resources = "/testData/serviceData.csv")
     @ParameterizedTest
     @DisplayName("Проверка страницы 'Услуги' на наличие кнопок из CSV")
-    void servicesTest(String serviceData) {
+    public void servicesTest(String serviceData) {
         step("Открываем страницу Услуги", () -> {
             open(baseUrl + "/services/");
         });
@@ -59,8 +59,7 @@ public class WebTests extends TestBase {
     @CsvFileSource(resources = "/testData/returnButton.csv")
     @ParameterizedTest
     @DisplayName("Проверка появления страницы 404")
-
-    void returnButton(String servicePage, String errorPage) {
+    public void returnButton(String servicePage, String errorPage) {
         step("Открываем страницу продукта {0}", () -> {
             open(baseUrl + servicePage);
         });
@@ -77,7 +76,7 @@ public class WebTests extends TestBase {
 
     @Test
     @DisplayName("Проверка работы поиска")
-    void searchTest (){
+    public void searchTest (){
         step("Открываем главную страницу", () -> {
             open(baseUrl);
         });
