@@ -30,7 +30,6 @@ public class WebTests extends TestBase {
         });
     }
 
-
     @ValueSource(strings = {"Пресс-центр", "Достижения", "Партнеры", "Группа компаний", "Комплаенс"})
     @ParameterizedTest
     @DisplayName("Проверка страницы 'О компании' на наличие кнопок из ValueSource")
@@ -54,7 +53,6 @@ public class WebTests extends TestBase {
             $("ul.service-list").shouldHave(text(serviceData));
         });
     }
-
 
     @CsvFileSource(resources = "/testData/returnButton.csv")
     @ParameterizedTest
