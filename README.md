@@ -65,7 +65,7 @@
 ### Локальный запуск тестов
 
 ```bash
-gradle clean test
+gradle clean test -Denv=local
 ```
 
 ### Удаленный запуск тестов
@@ -73,11 +73,7 @@ gradle clean test
 ```bash
 gradle clean test 
 ${TASK}
--Dbase_url=${BASE_URL}
--DremoteUrl=${REMOTE_URL}
--Dscreen_resolution=${BROWSER_SIZE}
--Dbrowser=${BROWSER}
--Dbrowser_ver=${BROWSER_VERSION}
+"-Denv=remote"
 ```
 
 ### Параметры сборки
